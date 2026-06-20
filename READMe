@@ -1,0 +1,31 @@
+# ✨ Minha To-Do List ✨
+
+## 📘 Descrição
+Este projeto foi desenvolvido como **Trabalho Prático Final** da disciplina **Programação para Internet I**.  
+O sistema é uma aplicação web de lista de tarefas (**To-Do List**) que permite:
+
+- ➕ Adicionar novas tarefas  
+- ✅ Concluir tarefas  
+- ↩ Reabrir tarefas concluídas  
+- ❌ Excluir tarefas  
+- 📋 Filtrar tarefas (Todas, Concluídas, Pendentes)  
+- 📊 Acompanhar progresso com barra animada e contador  
+- 💡 Exibir frases motivacionais via API externa  
+- 📅 Mostrar data e hora atualizadas automaticamente  
+
+Além disso, o projeto possui uma segunda página **Sobre o Projeto**, atendendo ao requisito de múltiplas telas.
+
+---
+
+## 🖼️ Prints da Aplicação
+
+### Página Principal
+![Página Principal](assets/print-index.png)
+
+### Página Sobre
+![Página Sobre](assets/print-sobre.png)
+
+## 🚀 Instruções de Execução
+1. Clone ou baixe este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/projeto-final.git

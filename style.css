@@ -1,0 +1,370 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #16213e);
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff, 0 0 20px #00bcd4;
+}
+
+/* Formulário */
+#task-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+#task-input {
+  flex: 1;
+  max-width: 400px;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+#task-input:focus {
+  outline: none;
+  box-shadow: 0 0 12px #00e5ff;
+}
+
+/* Botão principal */
+.btn-principal {
+  background: linear-gradient(135deg, #00e5ff, #00bcd4);
+  color: #111;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 14px;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+}
+
+.btn-principal:hover {
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+  transform: scale(1.08);
+}
+
+/* Filtros */
+#filter-section {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-filtro {
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 0.9rem 1.8rem;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.todas {
+  background: #333;
+  color: #fff;
+}
+
+.concluidas {
+  background: #4caf50;
+  color: #fff;
+}
+
+.pendentes {
+  background: #ff9800;
+  color: #fff;
+}
+
+.btn-filtro:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.2);
+}
+
+/* Lista de tarefas */
+#task-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.task:hover {
+  transform: scale(1.02);
+  background: rgba(255,255,255,0.15);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Botões dentro da tarefa */
+.task button {
+  margin-left: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.task button:first-of-type {
+  background: #4caf50;
+  color: #fff;
+}
+
+.task button:first-of-type:hover {
+  background: #388e3c;
+}
+
+.task button:last-of-type {
+  background: #ff5252;
+  color: #fff;
+}
+
+.task button:last-of-type:hover {
+  background: #e53935;
+}
+
+/* Progresso */
+#progress-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00e5ff;
+}
+
+#progress-bar {
+  width: 80%;
+  height: 14px;
+  background: #444;
+  border-radius: 6px;
+  margin: 0.5rem auto 2rem;
+  overflow: hidden;
+}
+
+#progress-fill {
+  height: 100%;
+  background: #00e5ff;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+#clima-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #00e5ff;
+  margin-top: 0.5rem;
+}
+
+#data-hora-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #00e5ff;
+  margin-top: 0.5rem;
+}
+
+
+#progress-section {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#progress-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+#contador-text {
+  font-size: 1.1rem;
+  color: #00e5ff;
+  margin-top: 0.5rem;
+}
+
+#data-hora-text {
+  font-size: 1.1rem;
+  color: #00e5ff;
+  margin-top: 0.3rem;
+}
+
+#progress-bar {
+  width: 80%;
+  height: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #00e5ff, #00ff99);
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out; /* animação suave */
+}
+
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#task-list li span.concluida {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#task-list li button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#task-list li button:hover {
+  opacity: 0.8;
+}
+
+#task-list li button:nth-of-type(1) {
+  background-color: #00e5ff;
+  color: #000;
+}
+
+#task-list li button:nth-of-type(2) {
+  background-color: #ff4444;
+  color: #fff;
+}
+
+.task button {
+  margin-left: 10px;
+  border-radius: 8px;
+  font-size: 1.2rem; /* maior para destacar ícones */
+  padding: 0.5rem 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.task button:first-of-type {
+  background: #4caf50;
+  color: #fff;
+}
+
+.task button:first-of-type:hover {
+  background: #388e3c;
+}
+
+.task button:last-of-type {
+  background: #ff5252;
+  color: #fff;
+}
+
+.task button:last-of-type:hover {
+  background: #e53935;
+}
+
+#sobre-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+#voltar-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a.btn-principal {
+  display: inline-block;
+  margin-top: 1rem; /* espaçamento extra */
+}
+/* Centralizar frase motivacional */
+#motivacional {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#frase {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Centralizar rodapé */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Botões maiores */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
