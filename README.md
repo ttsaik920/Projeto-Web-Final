@@ -31,4 +31,4 @@ Além disso, o projeto possui uma segunda página **Sobre o Projeto**, atendendo
    git clone https://github.com/seu-usuario/projeto-final.git
    
 ## 🎥 Vídeo Explicativo
-Veja o vídeo da aplicação funcionando: [Assista aqui](URL_DO_VIDEO)
+Veja o vídeo da aplicação funcionando: [Assista aqui](https://youtu.be/HgE9wtb2p9Q)
