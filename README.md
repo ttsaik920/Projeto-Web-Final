@@ -32,4 +32,4 @@ Além disso, o projeto possui uma segunda página **Sobre o Projeto**, atendendo
 Acesse a aplicação online: [GitHub Pages](https://ttsaik920.github.io/Projeto-Web-Final/)
 
 ## 🎥 Vídeo Explicativo
-Veja o vídeo da aplicação funcionando: [Assista aqui](https://youtu.be/8dLzaTmXd8c)
+Veja o vídeo da aplicação funcionando: [Assista aqui]()
